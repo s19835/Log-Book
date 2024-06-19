@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Book</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Log Book</h1>
+        <div class="left">
+            <form id="form">
+                <label for="log">Log your activity here.</label>
+                <br><br>
+                <textarea name="log" id="textbox" cols="30" rows="10"></textarea>
+                <div id="validation"></div>
+                <br><br>
+                <button type="submit">Log</button>
+            </form>
+        </div>
+        <div class="right">
+            <h3>Logs</h3>
+            <div id="logs"></div>
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
