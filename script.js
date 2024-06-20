@@ -1,3 +1,5 @@
+let data = [];
+
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('form');
     const textbox = document.getElementById('textbox');
@@ -21,9 +23,9 @@ function formValidation(textbox) {
 
 function saveData(textbox, logs) {
     if (textbox.value) {
-        // const data = [];
-        // data.push({'data':textbox.value});
-        // localStorage.setItem('data', JSON.stringify(data))
+        data.push({data:textbox.value});
+        localStorage.setItem('data', JSON.stringify(data))
+        console.log(data);
         logData(textbox, logs);
     }
 }
